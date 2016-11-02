@@ -22,5 +22,5 @@ from jBHTrans import jBHTrans
 
 j = jBHTrans()
 lines = j.getAvailableBusLines()
-locations = j.getBusLocations(lineNumber=lines[0]["lineNumber"], lineName=lines[0]["lineName"])
+locations = j.getBusLocations(lineNumber=lines[10]["lineNumber"], lineName=lines[10]["lineName"])
 ```
