@@ -18,7 +18,7 @@ class jBHTrans:
         lines = html.split("<br />")
         response["time"] = lines[0].split("Horario: ")[1].strip()
         response["address"] = lines[1].strip()
-        response["direction"] = lines[2].split("Sentido: ")[1].strip()[:-1].title()
+        response["direction"] = lines[2].split("Sentido:")[1][:-1].strip().title()
 
         return response
 
